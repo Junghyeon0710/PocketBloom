@@ -43,7 +43,7 @@ def main():
         (36.60, 39.45, "한국어와 영어 · 내 취향대로"),
         (39.90, 41.55, "Pocket Bloom · 오늘도 한 칸"),
     ]
-    font = "Assets/PocketBloom/Art/NotoSansKR.ttf"
+    font = "Assets/PocketBloom/Art/PocketBloomSans-SemiBold.ttf"
     segments = []
     timeline = []
     position = 0.0
@@ -53,10 +53,10 @@ def main():
         caption_file.write_text(caption, encoding="utf-8")
         segment = work / f"clip-{index:02d}.mp4"
         vf = (
-            "scale=864:1536:flags=lanczos,pad=1080:1920:108:220:color=0x103C3D,"
-            f"drawtext=fontfile='{font}':text='Pocket Bloom':fontsize=76:fontcolor=0xFFF9E9:x=(w-tw)/2:y=55,"
-            f"drawtext=fontfile='{font}':text='GAMEPLAY HIGHLIGHTS':fontsize=25:fontcolor=0xBFEAD6:x=(w-tw)/2:y=158,"
-            f"drawtext=fontfile='{font}':textfile='{caption_file.as_posix()}':expansion=none:fontsize=43:fontcolor=0xFFF9E9:x=(w-tw)/2:y=1810,"
+            "scale=864:1536:flags=lanczos,pad=1080:1920:108:220:color=0xFFF7E6,"
+            f"drawtext=fontfile='{font}':text='Pocket Bloom':fontsize=76:fontcolor=0x1B4A3E:x=(w-tw)/2:y=55,"
+            f"drawtext=fontfile='{font}':text='SUNLIT GARDEN':fontsize=25:fontcolor=0x66846C:x=(w-tw)/2:y=158,"
+            f"drawtext=fontfile='{font}':textfile='{caption_file.as_posix()}':expansion=none:fontsize=43:fontcolor=0x1B4A3E:x=(w-tw)/2:y=1810,"
             f"fade=t=in:st=0:d=0.10,fade=t=out:st={duration-0.10:.3f}:d=0.10"
         )
         run([args.ffmpeg, "-y", "-hide_banner", "-loglevel", "error", "-ss", str(start), "-i", str(source),

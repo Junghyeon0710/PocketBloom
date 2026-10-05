@@ -1,5 +1,8 @@
 # 아트·글꼴·오디오 출처
 
+- 2026-10-05 Sunlit Garden UI: 사용자가 선택한 시안을 참조해 내장 ImageGen으로 새 배경·로고·모드 삽화 6개를 생성했습니다. 원본과 [프롬프트·구현 기록](UIRefresh/README.md)을 보존했습니다. UI 글자와 보드 데이터는 실제 코드로 표시합니다.
+- `PocketBloomSans-SemiBold.ttf`: 기존 OFL Noto Sans KR의 600 굵기 정적 변환본. 이름을 Pocket Bloom Sans로 바꿨으며 원본 저작권·OFL을 보존했습니다. `Tools/BakeSunlitFont.py`로 재현합니다. TMP 자산 `SunlitFont.asset`에 한/영 UI와 숫자 글자를 정적으로 포함했습니다.
+
 - `Assets/PocketBloom/Art/GardenKeyArt.png`: 이 프로젝트를 위해 내장 ImageGen으로 새로 생성, 2026-10-04. 원본은 Codex 생성 이미지 보관함에도 유지했다. 기존 게임/캐릭터를 참조하지 않았다.
 - 프롬프트: "Create a finished premium mobile 2D casual puzzle game key-art asset for an original game called Pocket Bloom. No text, no letters, no UI. Landscape 3:2 composition. A delightful tiny floating garden island with a creamy round sleepy cat curled beside oversized pastel pink cosmos flowers, golden yellow daisies, mint leaves and two little lavender flower buds, a winding pale stone path, terracotta planter, soft teal turquoise background with subtle grain and tiny pollen dots. Warm sunlight, simple chunky hand-painted shapes with dimensional soft shadows, sophisticated editorial children's book gouache illustration, warm ivory highlights, coral pink and sunny orange accents. The central garden takes 75 percent of canvas, leave airy teal negative space around all edges. Polished commercially usable game art, extremely clean readable silhouette, cozy and tactile, no existing franchises. Soft background not transparent."
 - `NotoSansKR.ttf`: [Google Fonts Noto Sans KR](https://github.com/google/fonts/tree/main/ofl/notosanskr), SIL Open Font License 1.1. 라이선스 원문은 `NotoSansKR-OFL.txt`에 동봉.

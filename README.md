@@ -1,9 +1,16 @@
 # Pocket Bloom · 포켓 블룸
 
-![Pocket Bloom 정원 아트](Docs/Store/feature-graphic.png)
+<p align="center">
+  <img src="Docs/Media/Screenshots/home.png" width="260" alt="Sunlit Garden: 수채화 정원과 고양이가 있는 새 홈">
+  <img src="Docs/Media/Screenshots/gameplay.png" width="260" alt="Sunlit Garden: 세이지 보드와 파스텔 꽃 블록">
+</p>
 
 꽃 블록을 놓아 줄을 완성하고 작은 정원을 가꾸는 세로형 2D 퍼즐입니다. 짧은 한 판부터 36개 정원 여행까지, 터치와 드래그로 편하게 즐길 수 있습니다.
 
+
+## Sunlit Garden UI
+
+사용자가 선택한 시안을 기준으로 햇살 정원·고양이 홈, 초록·코랄 로고, 크림색 카드와 세이지색 플레이 보드를 적용했습니다. ImageGen 삽화와 실제 uGUI 버튼·한국어/영어 문자·점수·터치 보드를 결합했습니다. [선택 시안과 적용 기록](Docs/UIRefresh/README.md)에 자산 프롬프트와 구현 내용을 정리했습니다.
 
 ## 플레이 하이라이트
 
@@ -11,9 +18,9 @@
   <img src="Docs/Media/pocket-bloom-highlight.gif" width="320" alt="실제 플레이: 꽃 블록 배치, 줄 완성, 여행 목표 달성, 정원 컬렉션">
 </p>
 
-[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.0-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
+[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
 
-Unity 에디터의 실제 Game View를 녹화하고 컷 편집·짧은 페이드·한국어 자막을 적용했습니다. 실제 게임 음악과 효과음이 들어 있습니다. 자동 터치 입력으로 정상 플레이한 영상이며 Android 실기기 촬영은 아닙니다. GIF는 무음 미리보기입니다.
+2026-10-05 새 UI를 적용한 Unity 에디터의 실제 Game View를 다시 녹화하고 컷 편집·짧은 페이드·한국어 자막을 적용했습니다. 실제 게임 음악과 효과음이 들어 있습니다. 자동 터치 입력으로 정상 플레이한 영상이며 Android 실기기 촬영은 아닙니다. GIF는 무음 미리보기입니다.
 
 ## 스크린샷
 
@@ -29,15 +36,15 @@ Unity 에디터의 실제 Game View를 녹화하고 컷 편집·짧은 페이드
 
 ## 다운로드와 실행
 
-[v1.0.0-preview 테스트 릴리스](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/tag/v1.0.0-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
+[v1.0.1-preview 테스트 릴리스](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/tag/v1.0.1-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
 
 현재 저장소는 비공개이므로 권한이 있는 GitHub 계정으로 로그인해야 다운로드할 수 있습니다.
 
 | 파일 | 실행 방법과 범위 |
 |---|---|
-| [Android APK · 약 42MiB](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.0-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
-| [Windows ZIP · 약 47MiB](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.0-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
-| [StoreKit ZIP · 약 4MiB](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.0-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
+| [Android APK](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
+| [Windows ZIP](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
+| [StoreKit ZIP](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
 
 Unity에서 실행하려면 **6000.6.2f1**로 프로젝트를 열고 패키지 가져오기가 끝난 뒤 `Assets/PocketBloom/Scenes/PocketBloom.unity`를 열어 Play를 누릅니다. 씬을 다시 생성할 때는 `Pocket Bloom > Create or Update Game Scene` 메뉴를 사용합니다.
 
@@ -47,7 +54,7 @@ Unity에서 실행하려면 **6000.6.2f1**로 프로젝트를 열고 패키지 �
 2. 가로 또는 세로 8칸을 채우면 줄이 사라지고 점수가 오릅니다.
 3. 여행 목표를 달성하고 씨앗을 모아 정원 컬렉션을 채웁니다.
 
-- **정원 여행:** 36단계, 목표 점수·줄 수와 별 기록.
+- **정원 여행:** 36단계, 목표 점수와 별 기록.
 - **끝없는 정원:** 최고 점수에 도전하는 무한 모드.
 - **오늘의 정원:** UTC 날짜마다 같은 문제를 제공하는 일일 도전.
 - **정원 컬렉션:** 플레이로 모으는 씨앗과 6단계 성장.
@@ -60,7 +67,7 @@ Unity 6, URP, Input System, uGUI/TextMeshPro를 사용했습니다. 퍼즐 규�
 
 | 확인 항목 | 결과와 검증 범위 |
 |---|---|
-| 규칙·광고 보상 처리 테스트 | EditMode 테스트 13/13 통과. 실제 광고 송출을 검증한 결과는 아닙니다. |
+| 규칙·광고 보상 처리 테스트 | 10/04 EditMode 테스트 13/13 통과. 실제 광고 송출을 검증한 결과는 아닙니다. |
 | 퍼즐 콘텐츠 | 36단계 승리 경로와 합법 배치 10,000수 확인. |
 | UI·입력 | 에디터 화면 흐름, 가상 터치 드래그와 30개 화면·안전 영역 조합 확인. |
 | Android 빌드 | ARM64 IL2CPP APK, 오류 0개. debug v2 서명, 16KB ELF·ZIP 정렬 검사 통과. |

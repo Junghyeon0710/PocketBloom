@@ -1,0 +1,37 @@
+{
+  "reference": "SelectedReference.png",
+  "created": "2026-10-05",
+  "tool": "ImageGen",
+  "assets": [
+    {
+      "name": "HomeBackdrop",
+      "transparent": false,
+      "prompt": "Edit target/reference: supplied Pocket Bloom A UI concept. Create ONLY the left HOME garden BACKGROUND illustration as a production 2D mobile UI asset, portrait 9:16. No UI, words, text, logos, panels, cards, buttons, counters or puzzle tiles anywhere. Faithfully preserve the sunlit watercolor storybook garden style, white-and-orange sleeping kitten on stone steps, blue sky, white/yellow daisies, pink cosmos, lavender flowers, leafy arch, cottage in the distance, warm sage/coral/ivory palette. Full bleed art, no border outside image. Layout for UI overlay: clean pale-blue sky opening in upper center at y12-35% reserved for a logo; sleeping ginger-and-white kitten on stone step near central y45-53%, prominent but not giant; the lower third has calm pale stone path and light garden surface in the center, flowers mostly along left/right edges, allowing real buttons to be placed over it. Keep background behind UI areas relatively simple. Charming painterly detailed garden, soft morning light. Render a complete natural scene underneath where the original buttons were, remove every original interface element. Exact visual family of A HOME, not B clay style."
+    },
+    {
+      "name": "PlayBackdrop",
+      "transparent": false,
+      "prompt": "Edit reference: supplied Pocket Bloom A UI concept RIGHT gameplay. Generate ONLY its warm sunlit watercolor garden BACKGROUND/frame for use behind functional gameplay UI, portrait9:16. NO UI, text, letters, logo, tiles, board, buttons, numbers, counters, progress or panels. Light warm-ivory soft paper center occupying85%width and90%height, subtly pale-sage, extremely calm and uncluttered. Beautiful watercolor leaves and small daisies only at very top outer corners and very bottom left/right edges; delicate pink flowers, small pale stone hints. No kitten, no main hero scene, no central objects. The center must be an uninterrupted pale cream quiet area so a large actual puzzle board and score cards read clearly. Light airy botanical framing matches A sunlit garden. Detailed2D painterly illustration, no hard presentation border."
+    },
+    {
+      "name": "BotanicalLogo",
+      "transparent": true,
+      "prompt": "Use supplied Pocket Bloom A concept left HOME as exact style reference. Generate ONLY its botanical wordmark as a standalone transparent PNG asset. Correct text, exact two-line arrangement \"Pocket\" above \"Bloom\". Pocket dark forest-green, Bloom warm coral. Rounded elegant bold brush-lettered friendly typography from A, tiny integrated leaves and a small daisy in the o of Bloom. Wide compact logo silhouette, all letters clearly legible, not cropped, very little empty padding. NO other text, UI, background, board, numbers, labels or illustration. Real transparent alpha around all letters and leaves; no white rectangular backing, no checkerboard texture. Soft illustrated highlights and subtle dimensional paint, watercolor garden branding. The actual text Pocket Bloom must be spelled correctly."
+    },
+    {
+      "name": "DailyArt",
+      "transparent": true,
+      "prompt": "Create one standalone transparent-background production UI illustration for Pocket Bloom, same watercolor storybook style as the reference A HOME daily mode card: a lovely small cream desk calendar with gold binder rings, a single white-and-yellow daisy illustration on the calendar page, a few sage leaves and tiny peach flowers around its base. Calendar faces viewer front three-quarter very mild, rectangular compact silhouette, complete unclipped. NO words, letters, numbers, text, cards, frame, UI, shadows outside object or background. Real transparent alpha. Palette warm cream, antique gold, fresh sage, coral. Crisp clean asset that remains recognizable inside a small mobile button. Not photoreal, not3Dclay; softly painted casual game2D illustration."
+    },
+    {
+      "name": "EndlessArt",
+      "transparent": true,
+      "prompt": "Create one standalone transparent-background production UI illustration for Pocket Bloom, same watercolor storybook style as reference A HOME endless mode card: a small rustic wooden garden signpost with two directional arrows, planted amongst sage grass, white daisies and one small peach cosmos. Compact complete silhouette, slight friendly2D illustrated depth, readable at small mobile-card size. NO words, letters, numbers, text, scenery backdrop, UI, card or border. Real transparent alpha around object, no white rectangle or checkerboard. Warm honey wood, sage mint leaves, cream flowers, coral accents, soft sunny watercolor painted finish. Do not include any extra objects from other UI screens."
+    },
+    {
+      "name": "CollectionArt",
+      "transparent": true,
+      "prompt": "Create one standalone transparent-background production UI illustration for Pocket Bloom, same watercolor storybook style as reference A HOME collection card: a lovely closed forest-green botanical scrapbook with warm golden page edges and binding, cream daisy and tiny coral flowers painted on its cover, small sage leaves beside book. Three-quarter view, complete compact silhouette and crisp details for a mobile UI card. NO words, letters, numbers, text, UI, frame, background or border. Real transparent alpha, no white rectangle or checkerboard. Warm sunlit2D watercolor illustration, high quality, not clay, no extra mode icons."
+    }
+  ]
+}
