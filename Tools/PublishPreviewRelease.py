@@ -87,8 +87,15 @@ def main():
         evidence.append(dict(name=file.name, bytes=asset["size"], digest=asset["digest"], url=asset["browser_download_url"]))
         print(f"Verified upload: {file.name}", flush=True)
     release = api(release["url"], "PATCH", dict(draft=False, prerelease=True, make_latest="false"))
-    record = dict(repository=repo, source_commit=head, tag=TAG, url=release["html_url"], assets=evidence)
-    # 공개된 소스 커밋 이후의 전달 확인 자료이므로 원본 녹화 폴더에 보존한다.
+    if release["draft"] or not release["prerelease"]:
+        raise RuntimeError("The prerelease was not published successfully.")
+    # 초안의 untagged 다운로드 주소는 발행 뒤 실제 태그 주소로 바뀐다.
+    published = {asset["name"]: asset for asset in release["assets"]}
+    for asset in evidence:
+        asset["url"] = published[asset["name"]]["browser_download_url"]
+    record = dict(repository=repo, visibility=info.get("visibility"), source_commit=head,
+                  tag=TAG, url=release["html_url"], assets=evidence)
+    # 푸시된 소스 커밋 이후의 전달 확인 자료이므로 원본 녹화 폴더에 보존한다.
     path = Path("Recordings/PocketBloom/release-delivery.json")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
