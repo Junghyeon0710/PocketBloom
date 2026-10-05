@@ -10,7 +10,7 @@ using UnityEngine.InputSystem.UI;
 
 namespace PocketBloom
 {
-    public sealed class BloomGame : MonoBehaviour
+    public sealed partial class BloomGame : MonoBehaviour
     {
         public TMP_FontAsset font;
         public Texture2D gardenArt;
@@ -33,13 +33,14 @@ namespace PocketBloom
         float toastUntil;
         Rect lastSafe;
         Vector2 lastScreen;
-        static readonly Color Ink = Hex("123F40"), Cream = Hex("FFF9E9"), Muted = Hex("6A9690"), Mint = Hex("BFEAD6"), Gold = Hex("F8D774"), Coral = Hex("F28F80");
-        static readonly Color[] Petals = { Hex("F8D774"), Hex("EFA6B6"), Hex("B9ADF0"), Hex("8FD5C4"), Hex("F3AD76") };
+        static readonly Color Ink = Hex("1B4A3E"), Cream = Hex("FFF7E6"), Muted = Hex("66846C"), Mint = Hex("C4DFBC"), Gold = Hex("F6D57B"), Coral = Hex("F58F73");
+        static readonly Color[] Petals = { Hex("F7D572"), Hex("F49587"), Hex("B69AE3"), Hex("9FD6AC"), Hex("F2BC70") };
         public string T(string ko, string en) => Profile.language == "ko" ? ko : en;
         static Color Hex(string value) { ColorUtility.TryParseHtmlString("#" + value, out var color); return color; }
 
         void Awake()
         {
+            font = Resources.Load<TMP_FontAsset>("SunlitFont") ?? font;
             Application.targetFrameRate = 60; Screen.sleepTimeout = SleepTimeout.SystemSetting;
             Profile = BloomSave.Load();
             audioFx = gameObject.AddComponent<BloomAudio>(); audioFx.Setup(); audioFx.Apply(Profile);
@@ -47,7 +48,7 @@ namespace PocketBloom
             var canvasGo = new GameObject("BloomCanvas", typeof(RectTransform), typeof(Canvas), typeof(UnityEngine.UI.CanvasScaler), typeof(UnityEngine.UI.GraphicRaycaster));
             canvasGo.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             var scaler = canvasGo.GetComponent<UnityEngine.UI.CanvasScaler>(); scaler.uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPixelSize;
-            var backdrop = Box((RectTransform)canvasGo.transform, "Backdrop", 0, 0, 720, 1280, Ink, 0);
+            var backdrop = Box((RectTransform)canvasGo.transform, "Backdrop", 0, 0, 720, 1280, Cream, 0);
             Stretch(backdrop.rectTransform);
             safe = Rect((RectTransform)canvasGo.transform, "SafeArea", 0, 0, 720, 1280);
             root = Rect(safe, "PortraitLayout", 0, 0, 720, 1280);
@@ -79,30 +80,16 @@ namespace PocketBloom
             ClearToast();
             CloseOverlay(); if (page) { page.gameObject.SetActive(false); Destroy(page.gameObject); }
             page = Rect(root, name, 0, 0, 720, 1280); CurrentScreen = name; selected = -1;
-            Box(page, "TopGlow", 26, 22, 668, 6, Mint, 3);
+            Illustration(page, name == "home" ? "HomeBackdrop" : "PlayBackdrop", 0, 0, 720, 1280);
         }
         void Brand(string subtitle)
         {
-            Label(page, "Brand", "POCKET / BLOOM", 40, 54, 490, 35, 22, Mint, FontStyles.Bold);
+            Label(page, "Brand", "POCKET / BLOOM", 40, 54, 490, 35, 22, Ink, FontStyles.Bold);
             Label(page, "Subheading", subtitle, 40, 96, 620, 38, 22, Muted);
         }
         public void Home()
         {
-            ClearPage("home");
-            Label(page, "Eyebrow", "A LITTLE SPACE TO GROW", 40, 72, 640, 30, 17, Mint, FontStyles.Bold, TextAlignmentOptions.Center);
-            Label(page, "Title", "Pocket\nBloom", 40, 108, 640, 216, 72, Cream, FontStyles.Bold, TextAlignmentOptions.Center);
-            Label(page, "Tagline", T("한 칸씩, 나만의 작은 정원", "One little piece. A garden of your own."), 40, 326, 640, 38, 26, Mint, 0, TextAlignmentOptions.Center);
-            Art(page, 32, 396, 656, 332);
-            Label(page, "Seeds", T("모은 씨앗  ", "SEEDS  ") + Profile.seeds.ToString("N0") + "    /    " + T("최고 기록  ", "BEST  ") + Profile.best.ToString("N0"), 50, 735, 620, 35, 21, Cream, 0, TextAlignmentOptions.Center);
-            bool resume = Run != null && !Run.finished;
-            Button(page, "Play", resume ? T("이어서 꽃 피우기", "Continue blooming") : T("정원 여행 시작", "Start your garden"), 44, 799, 632, 94, Gold,
-                () => { if (resume) ShowGame(); else StartRun("journey", Profile.unlockedStage); }, 30);
-            Button(page, "Journey", T("정원 여행", "JOURNEY") + "\n" + Profile.unlockedStage + " / 36", 44, 916, 198, 132, Hex("215457"), Journey, 23, Cream);
-            Button(page, "Daily", T("오늘의 정원", "DAILY") + "\n" + DateTime.UtcNow.ToString("MM.dd"), 261, 916, 198, 132, Hex("215457"), () => OfferNew("daily", 1), 23, Cream);
-            Button(page, "Endless", T("끝없는 정원", "ENDLESS") + "\n" + T("나의 최고 기록", "Beat your best"), 478, 916, 198, 132, Hex("215457"), () => OfferNew("endless", 1), 23, Cream);
-            Button(page, "Collection", T("나의 정원", "My garden"), 44, 1084, 302, 76, Hex("1A4B4D"), Collection, 24, Mint);
-            Button(page, "Settings", T("설정", "Settings"), 374, 1084, 302, 76, Hex("1A4B4D"), Settings, 24, Mint);
-            Label(page, "Footer", T("서두르지 않아도 괜찮아요. 오늘도 한 칸.", "No rush. Just one lovely little piece."), 40, 1210, 640, 32, 18, Muted, 0, TextAlignmentOptions.Center);
+            ClearPage("home"); SunlitHome();
         }
         void OfferNew(string mode, int stage)
         {
@@ -127,38 +114,7 @@ namespace PocketBloom
         public void ShowGame()
         {
             if (Run == null) { Home(); return; }
-            ClearPage("game");
-            Brand(Run.mode == "journey" ? T("정원 여행  /  ", "JOURNEY  /  ") + Run.stage.ToString("00") : Run.mode == "daily" ? T("오늘의 정원  /  ", "DAILY  /  ") + Run.day : T("끝없는 정원", "ENDLESS GARDEN"));
-            Button(page, "Pause", "II", 608, 50, 72, 72, Hex("24595B"), Pause, 26, Cream);
-            var panel = Box(page, "ScoreCard", 40, 155, 640, 126, Cream, 25).rectTransform;
-            Label(panel, "ScoreCaption", T("피워낸 점수", "BLOOM SCORE"), 24, 16, 400, 30, 19, Hex("64827B"));
-            scoreText = Label(panel, "Score", "", 22, 42, 400, 78, 49, Ink, FontStyles.Bold);
-            Label(panel, "Target", Run.target > 0 ? T("목표", "GOAL") + "\n" + Run.target : T("최고", "BEST") + "\n" + Profile.best, 427, 22, 185, 86, 26, Ink, FontStyles.Bold, TextAlignmentOptions.Right);
-            Box(page, "ProgressTrack", 44, 299, 632, 10, Hex("28585A"), 5);
-            progress = Box(page, "Progress", 44, 299, 1, 10, Mint, 5);
-            detailText = Label(page, "Detail", "", 48, 323, 624, 34, 21, Mint);
-            Box(page, "BoardShadow", 51, 376, 618, 618, Hex("0C3033"), 27);
-            Box(page, "BoardFrame", 48, 367, 624, 624, Hex("376766"), 27);
-            board = Rect(page, "Board", 60, 379, 600, 600);
-            for (int y = 0; y < 8; y++) for (int x = 0; x < 8; x++)
-            {
-                int index = y * 8 + x, px = x, py = y;
-                tiles[index] = Box(board, "Cell_" + index, x * 75 + 2, y * 75 + 2, 71, 71, Hex("2A5454"), 13);
-                var button = tiles[index].gameObject.AddComponent<UnityEngine.UI.Button>(); button.targetGraphic = tiles[index];
-                tiles[index].raycastTarget = true; button.onClick.AddListener(() => PlaceSelected(px, py));
-            }
-            Label(page, "TrayCaption", T("조각을 골라 빈 칸에 놓아주세요", "A little piece, a little possibility"), 40, 1004, 640, 30, 19, Muted, 0, TextAlignmentOptions.Center);
-            for (int i = 0; i < 3; i++)
-            {
-                slots[i] = Rect(page, "Piece_" + i, 46 + i * 215, 1046, 198, 112);
-                var hit = Box(slots[i], "TouchArea", 0, 0, 198, 112, Hex("1D4C4D"), 19);
-                hit.raycastTarget = true;
-                var input = hit.gameObject.AddComponent<BloomPieceInput>(); input.game = this; input.slot = i;
-            }
-            Button(page, "Undo", T("한 수 뒤로", "Undo"), 44, 1190, 198, 64, Hex("265557"), Undo, 22, Cream);
-            Button(page, "Hint", T("살짝 힌트", "Hint"), 261, 1190, 198, 64, Hex("265557"), Hint, 22, Cream);
-            Button(page, "Shuffle", T("새 조각", "New pieces"), 478, 1190, 198, 64, Hex("265557"), Shuffle, 22, Cream);
-            RefreshBoard();
+            ClearPage("game"); SunlitGame(); RefreshBoard();
             if (Run.finished) Result();
         }
         // 고정 논리 해상도는 실제 안전 영역에 맞춰 균일하게 축소한다.
@@ -166,15 +122,16 @@ namespace PocketBloom
         {
             if (CurrentScreen != "game") return;
             scoreText.text = Run.score.ToString("N0");
-            detailText.text = T("피운 줄 ", "LINES ") + Run.lines + "    ·    " + (Run.moveLimit > 0 ? T("남은 수 ", "MOVES ") + Math.Max(0, Run.moveLimit - Run.moves) : T("콤보 ", "COMBO ") + Run.combo);
-            progress.rectTransform.sizeDelta = new Vector2(632 * (Run.target > 0 ? Mathf.Clamp01(Run.score / (float)Run.target) : Mathf.Clamp01(Run.score / (float)Math.Max(1000, Profile.best))), 10);
+            movesText.text = (Run.moveLimit > 0 ? Math.Max(0, Run.moveLimit - Run.moves) : Run.combo).ToString();
+            detailText.text = T("피운 줄 ", "LINES ") + Run.lines + "    ·    " + T("콤보 ", "COMBO ") + Run.combo;
+            progress.rectTransform.sizeDelta = new Vector2(568 * (Run.target > 0 ? Mathf.Clamp01(Run.score / (float)Run.target) : Mathf.Clamp01(Run.score / (float)Math.Max(1000, Profile.best))), 15);
             for (int i = 0; i < 64; i++)
             {
-                var tile = tiles[i]; tile.color = Run.cells[i] > 0 ? Petals[Run.cells[i] - 1] : Hex("2A5454");
+                var tile = tiles[i]; tile.inset = Run.cells[i] == 0; tile.SetVerticesDirty(); tile.color = Run.cells[i] > 0 ? Petals[Run.cells[i] - 1] : Soil;
                 for (int j = tile.transform.childCount - 1; j >= 0; j--) { var c = tile.transform.GetChild(j).gameObject; c.SetActive(false); Destroy(c); }
                 if (Run.cells[i] > 0)
                 {
-                    var f = Box(tile.rectTransform, "Flower", 19, 18, 33, 33, Color.Lerp(Petals[Run.cells[i] - 1], Color.white, .35f), 0); f.flower = true;
+                    var f = Box(tile.rectTransform, "Flower", 19, 18, 33, 33, Color.Lerp(Petals[Run.cells[i] - 1], Color.white, .7f), 0); f.flower = true;
                     if (Run.buds[i] > 0) Label(tile.rectTransform, "Bud", "+", 25, 22, 22, 28, 23, Ink, FontStyles.Bold, TextAlignmentOptions.Center);
                 }
             }
@@ -184,13 +141,17 @@ namespace PocketBloom
         {
             var holder = slots[slot];
             for (int i = holder.childCount - 1; i >= 1; i--) { holder.GetChild(i).gameObject.SetActive(false); Destroy(holder.GetChild(i).gameObject); }
-            holder.GetChild(0).GetComponent<BloomGraphic>().color = selected == slot ? Hex("447C75") : Hex("1D4C4D");
+            holder.GetChild(0).GetComponent<BloomGraphic>().color = selected == slot ? Hex("D7EDC7") : Cream;
             int id = Run.hand[slot]; if (id < 0) return;
             var shape = BloomBoard.Shapes[id]; int maxX = 0, maxY = 0;
             for (int i = 0; i < shape.Length; i += 2) { maxX = Math.Max(maxX, shape[i]); maxY = Math.Max(maxY, shape[i + 1]); }
-            float size = Math.Min(30, 94f / (maxY + 1)), ox = (198 - (maxX + 1) * size) / 2, oy = (112 - (maxY + 1) * size) / 2;
+            float size = Math.Min(47, 120f / (maxY + 1)), ox = (198 - (maxX + 1) * size) / 2, oy = (142 - (maxY + 1) * size) / 2;
             for (int i = 0; i < shape.Length; i += 2)
-                Box(holder, "Petal", ox + shape[i] * size, oy + shape[i + 1] * size, size - 2, size - 2, Petals[Run.colors[slot] - 1], 6);
+            {
+                var petal = Box(holder, "Petal", ox + shape[i] * size, oy + shape[i + 1] * size, size - 3, size - 3, Petals[Run.colors[slot] - 1], 8);
+                float fSize = size * .46f, offset = (size - 3 - fSize) / 2;
+                var flower = Box(petal.rectTransform, "Flower", offset, offset, fSize, fSize, Color.Lerp(Petals[Run.colors[slot] - 1], Color.white, .7f), 0); flower.flower = true;
+            }
         }
         public void SelectPiece(int slot)
         {
@@ -208,12 +169,12 @@ namespace PocketBloom
             RectTransformUtility.ScreenPointToLocalPointInRectangle(board, point, null, out var local);
             // 손가락 위에 미리 보기를 띄워 배치 위치가 가려지지 않도록 한다.
             int x = Mathf.FloorToInt(local.x / 75), y = Mathf.FloorToInt((-local.y - dragLift) / 75);
-            for (int i = 0; i < 64; i++) tiles[i].color = Run.cells[i] > 0 ? Petals[Run.cells[i] - 1] : Hex("2A5454");
+            for (int i = 0; i < 64; i++) tiles[i].color = Run.cells[i] > 0 ? Petals[Run.cells[i] - 1] : Soil;
             bool fits = BloomBoard.Fits(Run, Run.hand[slot], x, y);
             if (fits)
             {
                 var shape = BloomBoard.Shapes[Run.hand[slot]];
-                for (int i = 0; i < shape.Length; i += 2) tiles[(y + shape[i + 1]) * 8 + x + shape[i]].color = Color.Lerp(Petals[Run.colors[slot] - 1], Hex("2A5454"), .35f);
+                for (int i = 0; i < shape.Length; i += 2) tiles[(y + shape[i + 1]) * 8 + x + shape[i]].color = Color.Lerp(Petals[Run.colors[slot] - 1], Soil, .35f);
             }
             if (drop) { if (fits) PlaceSelected(x, y); else RefreshBoard(); }
         }
@@ -321,30 +282,30 @@ namespace PocketBloom
         void Journey()
         {
             ClearPage("journey"); Brand(T("36개의 작은 정원", "36 LITTLE GARDENS"));
-            Label(page, "Title", T("당신의 속도로\n피어나는 여행", "A journey at\nyour own pace"), 40, 164, 640, 142, 46, Cream, FontStyles.Bold);
+            Label(page, "Title", T("당신의 속도로\n피어나는 여행", "A journey at\nyour own pace"), 40, 164, 640, 142, 46, Ink, FontStyles.Bold);
             for (int i = 0; i < 12; i++)
             {
                 int stage = stagePage * 12 + i + 1; bool unlocked = stage <= Profile.unlockedStage;
                 string text = stage.ToString("00") + "\n" + (Profile.stars[stage - 1] > 0 ? new string('*', Profile.stars[stage - 1]) : unlocked ? T("꽃 피우기", "Bloom") : T("준비 중", "Locked"));
-                Button(page, "Stage_" + stage, text, 44 + (i % 3) * 216, 355 + (i / 3) * 163, 200, 146, unlocked ? (stage == Profile.unlockedStage ? Gold : Hex("265C5B")) : Hex("1B494A"),
-                    () => { if (unlocked) OfferNew("journey", stage); else Toast(T("앞 정원을 먼저 피워주세요", "Bloom the earlier garden first")); }, 25, stage == Profile.unlockedStage ? Ink : unlocked ? Cream : Muted);
+                Button(page, "Stage_" + stage, text, 44 + (i % 3) * 216, 355 + (i / 3) * 163, 200, 146, unlocked ? (stage == Profile.unlockedStage ? Gold : Cream) : Hex("E5EBD0"),
+                    () => { if (unlocked) OfferNew("journey", stage); else Toast(T("앞 정원을 먼저 피워주세요", "Bloom the earlier garden first")); }, 25, stage == Profile.unlockedStage ? Ink : unlocked ? Ink : Muted);
             }
-            Button(page, "Previous", "<", 44, 1050, 120, 68, Hex("285959"), () => { stagePage = Math.Max(0, stagePage - 1); Journey(); }, 30, Cream);
-            Label(page, "Page", (stagePage + 1) + " / 3", 260, 1066, 200, 40, 25, Cream, 0, TextAlignmentOptions.Center);
-            Button(page, "Next", ">", 556, 1050, 120, 68, Hex("285959"), () => { stagePage = Math.Min(2, stagePage + 1); Journey(); }, 30, Cream);
+            Button(page, "Previous", "<", 44, 1050, 120, 68, Cream, () => { stagePage = Math.Max(0, stagePage - 1); Journey(); }, 30, Ink);
+            Label(page, "Page", (stagePage + 1) + " / 3", 260, 1066, 200, 40, 25, Ink, 0, TextAlignmentOptions.Center);
+            Button(page, "Next", ">", 556, 1050, 120, 68, Cream, () => { stagePage = Math.Min(2, stagePage + 1); Journey(); }, 30, Ink);
             Button(page, "Back", T("홈으로", "Back home"), 44, 1160, 632, 80, Mint, Home);
         }
         void Collection()
         {
             ClearPage("collection"); Brand(T("모으고, 피우고, 쉬어가요", "COLLECT. BLOOM. BREATHE."));
-            Label(page, "Title", T("나만의 작은 정원", "Your little garden"), 40, 163, 640, 72, 44, Cream, FontStyles.Bold);
+            Label(page, "Title", T("나만의 작은 정원", "Your little garden"), 40, 163, 640, 72, 44, Ink, FontStyles.Bold);
             Art(page, 32, 267, 656, 334);
             string[] names = Profile.language == "ko" ? new[] { "첫 번째 새싹", "햇살 데이지", "분홍빛 오후", "라벤더 산책", "고양이의 낮잠", "영원한 봄" } : new[] { "First sprout", "Sunny daisies", "Pink afternoon", "Lavender walk", "Catnap corner", "Forever spring" };
-            Label(page, "GardenName", names[Profile.garden], 44, 630, 632, 56, 38, Gold, FontStyles.Bold, TextAlignmentOptions.Center);
-            Label(page, "Balance", T("모은 씨앗 ", "SEEDS ") + Profile.seeds, 44, 700, 632, 45, 28, Mint, 0, TextAlignmentOptions.Center);
+            Label(page, "GardenName", names[Profile.garden], 44, 630, 632, 56, 38, Ink, FontStyles.Bold, TextAlignmentOptions.Center);
+            Label(page, "Balance", T("모은 씨앗 ", "SEEDS ") + Profile.seeds, 44, 700, 632, 45, 28, Ink, 0, TextAlignmentOptions.Center);
             for (int i = 0; i < 6; i++)
             {
-                var f = Box(page, "GardenFlower_" + i, 109 + i * 84, 787, 62, 62, i <= Profile.garden ? Petals[i % 5] : Hex("38625E"), 0); f.flower = true;
+                var f = Box(page, "GardenFlower_" + i, 109 + i * 84, 787, 62, 62, i <= Profile.garden ? Petals[i % 5] : Cream, 0); f.flower = true;
             }
             int cost = (Profile.garden + 1) * 100;
             Button(page, "Grow", Profile.garden >= 5 ? T("모든 정원이 활짝 피었어요", "Your garden is in full bloom") : T("정원 가꾸기  ·  씨앗 ", "Grow garden  ·  ") + cost,
@@ -354,29 +315,29 @@ namespace PocketBloom
                     if (Profile.seeds < cost) { Toast(T("정원 여행에서 씨앗을 모아주세요", "Collect seeds by playing")); return; }
                     Profile.seeds -= cost; Profile.garden++; Save(); audioFx.Play(3); Collection();
                 }, 27);
-            Button(page, "DailyGift", T("오늘의 씨앗 받기  +20", "Daily seed gift  +20"), 44, 1028, 632, 75, Hex("285959"), () =>
+            Button(page, "DailyGift", T("오늘의 씨앗 받기  +20", "Daily seed gift  +20"), 44, 1028, 632, 75, Cream, () =>
             {
                 string day = DateTime.UtcNow.ToString("yyyy-MM-dd");
                 if (Profile.lastGift == day) { Toast(T("오늘의 씨앗을 이미 받았어요", "Today's seeds are already yours")); return; }
                 Profile.lastGift = day; Profile.seeds += 20; Save(); Collection();
-            }, 24, Cream);
+            }, 24, Ink);
             Button(page, "Back", T("홈으로", "Back home"), 44, 1152, 632, 80, Mint, Home);
         }
         void Settings()
         {
             ClearPage("settings"); Brand(T("내 속도, 내 취향", "MAKE YOURSELF AT HOME"));
-            Label(page, "Title", T("잠깐, 편하게", "A little comfort"), 40, 164, 640, 74, 47, Cream, FontStyles.Bold);
+            Label(page, "Title", T("잠깐, 편하게", "A little comfort"), 40, 164, 640, 74, 47, Ink, FontStyles.Bold);
             Toggle(T("효과음", "Sound effects"), Profile.sound, 294, () => Profile.sound = !Profile.sound);
             Toggle(T("배경 음악", "Garden music"), Profile.music, 389, () => Profile.music = !Profile.music);
             Toggle(T("진동", "Haptics"), Profile.haptics, 484, () => Profile.haptics = !Profile.haptics);
             Toggle(T("움직임 줄이기", "Reduce motion"), Profile.reducedMotion, 579, () => Profile.reducedMotion = !Profile.reducedMotion);
-            Button(page, "Language", T("언어  ·  한국어", "Language  ·  English"), 44, 688, 632, 80, Hex("285959"), () => { Profile.language = Profile.language == "ko" ? "en" : "ko"; Save(); Settings(); }, 26, Cream);
-            Button(page, "Help", T("놀이 방법", "How to play"), 44, 785, 632, 74, Hex("285959"), Tutorial, 25, Cream);
-            Button(page, "Privacy", T("개인정보와 광고", "Privacy & ads"), 44, 879, 632, 74, Hex("285959"), Privacy, 25, Cream);
-            Label(page, "Version", "POCKET BLOOM  /  1.0.0\n" + T("인앱결제 없음 · 오프라인 플레이", "No in-app purchases · Play offline"), 44, 1000, 632, 74, 21, Muted, 0, TextAlignmentOptions.Center);
+            Button(page, "Language", T("언어  ·  한국어", "Language  ·  English"), 44, 688, 632, 80, Cream, () => { Profile.language = Profile.language == "ko" ? "en" : "ko"; Save(); Settings(); }, 26, Ink);
+            Button(page, "Help", T("놀이 방법", "How to play"), 44, 785, 632, 74, Cream, Tutorial, 25, Ink);
+            Button(page, "Privacy", T("개인정보와 광고", "Privacy & ads"), 44, 879, 632, 74, Cream, Privacy, 25, Ink);
+            Label(page, "Version", "POCKET BLOOM  /  SUNLIT GARDEN\n" + T("인앱결제 없음 · 오프라인 플레이", "No in-app purchases · Play offline"), 44, 1000, 632, 74, 21, Muted, 0, TextAlignmentOptions.Center);
             Button(page, "Back", T("홈으로", "Back home"), 44, 1152, 632, 80, Mint, Home);
         }
-        void Toggle(string label, bool on, float y, Action change) => Button(page, label, label + "    " + (on ? "ON" : "OFF"), 44, y, 632, 78, Hex("285959"), () => { change(); audioFx.Apply(Profile); Save(); Settings(); }, 26, on ? Mint : Muted);
+        void Toggle(string label, bool on, float y, Action change) => Button(page, label, label + "    " + (on ? "ON" : "OFF"), 44, y, 632, 78, Cream, () => { change(); audioFx.Apply(Profile); Save(); Settings(); }, 26, on ? Ink : Muted);
         void Privacy()
         {
             var choices = new List<Choice> { new Choice(T("확인", "Got it"), CloseOverlay) };
@@ -388,7 +349,7 @@ namespace PocketBloom
         }
         void Art(RectTransform parent, float x, float y, float w, float h)
         {
-            var artFrame = Box(parent, "ArtBack", x, y, w, h, Hex("4F9D93"), 30);
+            var artFrame = Box(parent, "ArtBack", x, y, w, h, Cream, 30);
             artFrame.gameObject.AddComponent<UnityEngine.UI.Mask>().showMaskGraphic = true;
             if (gardenArt)
             {
@@ -416,8 +377,8 @@ namespace PocketBloom
         {
             if (!toastText)
             {
-                toastRoot = Box(root, "Toast", 60, 910, 600, 74, Cream, 22).rectTransform;
-                toastText = Label(toastRoot, "Message", "", 14, 8, 572, 58, 23, Ink, FontStyles.Bold, TextAlignmentOptions.Center);
+                toastRoot = Box(root, "Toast", 60, 1224, 600, 48, Cream, 22).rectTransform;
+                toastText = Label(toastRoot, "Message", "", 14, 5, 572, 38, 20, Ink, FontStyles.Bold, TextAlignmentOptions.Center);
             }
             toastText.transform.parent.SetAsLastSibling(); toastText.gameObject.SetActive(true); toastText.text = text; toastUntil = Time.unscaledTime + 2.3f;
         }

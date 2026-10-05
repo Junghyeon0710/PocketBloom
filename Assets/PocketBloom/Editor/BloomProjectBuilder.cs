@@ -23,6 +23,7 @@ namespace PocketBloom.Editor
             Directory.CreateDirectory("Assets/PocketBloom/Scenes");
             Directory.CreateDirectory("Assets/PocketBloom/Resources");
             var font = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/PocketBloom/Resources/BloomFont.asset");
+            font = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/PocketBloom/Resources/SunlitFont.asset") ?? font;
             if (!font)
             {
                 if (TMP_Settings.instance == null)
