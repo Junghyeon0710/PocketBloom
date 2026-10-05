@@ -3,9 +3,13 @@ var game = UnityEngine.Object.FindFirstObjectByType<PocketBloom.BloomGame>();
 if (game == null || !UnityEditor.EditorApplication.isPlaying) throw new System.Exception("Play mode required");
 var original = UnityEngine.JsonUtility.ToJson(game.Profile);
 var checks = new System.Collections.Generic.List<string>();
-var path = "Docs/Validation/PlayFlow.json";
+var path = System.IO.Path.GetFullPath("Docs/Validation/PlayFlow.json");
+System.Action<string> writeEvidence = json => {
+    var temp = path + ".tmp"; System.IO.File.WriteAllText(temp, json);
+    if (System.IO.File.Exists(path)) System.IO.File.Replace(temp, path, null); else System.IO.File.Move(temp, path);
+};
 System.IO.Directory.CreateDirectory("Docs/Validation");
-System.IO.File.WriteAllText(path, "{\"status\":\"running\"}");
+writeEvidence("{\"status\":\"running\"}");
 int phase = 0, steps = 0, seeds = game.Profile.seeds;
 double next = 0, start = UnityEditor.EditorApplication.timeSinceStartup;
 System.Action<string> click = name => {
@@ -67,13 +71,13 @@ tick = () => {
             if (clipped.Length > 0) throw new System.Exception("Collection text clipped: " + string.Join("|", clipped));
             checks.Add("Collection screen renders without clipped text");
             UnityEngine.JsonUtility.FromJsonOverwrite(original, game.Profile); PocketBloom.BloomSave.Write(game.Profile); game.Home();
-            System.IO.File.WriteAllText(path, Newtonsoft.Json.JsonConvert.SerializeObject(new { status="passed", checks, utc=System.DateTime.UtcNow.ToString("O") }, Newtonsoft.Json.Formatting.Indented));
+            writeEvidence(Newtonsoft.Json.JsonConvert.SerializeObject(new { status="passed", checks, utc=System.DateTime.UtcNow.ToString("O") }, Newtonsoft.Json.Formatting.Indented));
             UnityEditor.EditorApplication.update -= tick;
         }
     } catch (System.Exception e) {
         UnityEditor.EditorApplication.update -= tick;
         UnityEngine.JsonUtility.FromJsonOverwrite(original, game.Profile); PocketBloom.BloomSave.Write(game.Profile); game.Home();
-        System.IO.File.WriteAllText(path, Newtonsoft.Json.JsonConvert.SerializeObject(new { status="failed", error=e.ToString(), checks }, Newtonsoft.Json.Formatting.Indented));
+        writeEvidence(Newtonsoft.Json.JsonConvert.SerializeObject(new { status="failed", error=e.ToString(), checks }, Newtonsoft.Json.Formatting.Indented));
     }
 };
 UnityEditor.EditorApplication.update += tick;

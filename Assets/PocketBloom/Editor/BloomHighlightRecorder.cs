@@ -28,6 +28,8 @@ namespace PocketBloom.Editor
         static readonly List<object> moments = new List<object>();
         static int firstFrame;
         static bool active, oldRunInBackground;
+        static InputSettings.BackgroundBehavior oldBackgroundBehavior;
+        static InputSettings.EditorInputBehaviorInPlayMode oldEditorInputBehavior;
 
         [MenuItem("Pocket Bloom/Media/Record Gameplay Showcase (Play Mode)")]
         public static void Begin()
@@ -47,7 +49,11 @@ namespace PocketBloom.Editor
                 saveFiles[path] = File.Exists(path) ? File.ReadAllBytes(path) : null;
             }
             oldRunInBackground = Application.runInBackground;
+            oldBackgroundBehavior = InputSystem.settings.backgroundBehavior;
+            oldEditorInputBehavior = InputSystem.settings.editorInputBehaviorInPlayMode;
             Application.runInBackground = true;
+            InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
+            InputSystem.settings.editorInputBehaviorInPlayMode = InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
             moments.Clear();
             active = true;
             EditorApplication.playModeStateChanged += OnPlayModeChanged;
@@ -165,9 +171,13 @@ namespace PocketBloom.Editor
             if (game.Run.moves != before + 1) throw new InvalidOperationException("Touch placement was rejected.");
         }
 
-        static void QueueTouch(UnityEngine.InputSystem.TouchPhase phase, Vector2 position) =>
+        static void QueueTouch(UnityEngine.InputSystem.TouchPhase phase, Vector2 position)
+        {
             InputSystem.QueueStateEvent(touch, new TouchState { touchId = 1, phase = phase, position = position,
                 pressure = phase == UnityEngine.InputSystem.TouchPhase.Ended ? 0 : 1 });
+            // 에디터가 비활성일 때도 테스트 이벤트를 런타임 입력 업데이트에서 처리한다.
+            InputSystem.Update();
+        }
         static IEnumerator Frames(int count) { for (int i = 0; i < count; i++) yield return null; }
         static void Click(string name) => UnityEngine.Object.FindObjectsByType<Button>(FindObjectsSortMode.None)
             .Single(b => b.name == name && b.gameObject.activeInHierarchy).onClick.Invoke();
@@ -194,6 +204,8 @@ namespace PocketBloom.Editor
                 JsonUtility.FromJsonOverwrite(originalProfile, game.Profile);
                 game.Home();
                 Application.runInBackground = oldRunInBackground;
+                InputSystem.settings.backgroundBehavior = oldBackgroundBehavior;
+                InputSystem.settings.editorInputBehaviorInPlayMode = oldEditorInputBehavior;
                 RestoreSaveFiles();
                 WriteStatus(error == null ? "completed" : "failed", error?.ToString());
             }
