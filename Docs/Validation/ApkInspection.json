@@ -1,8 +1,8 @@
 {
-  "utc": "2026-10-05T05:24:16.106418+00:00",
+  "utc": "2026-10-05T06:12:23.102086+00:00",
   "apk": "D:\\Unity Projects\\Codex\\Builds\\Android\\PocketBloom-test.apk",
-  "bytes": 55762206,
-  "sha256": "62db589a38968e1cce08aa9e063535361b24fedee282c8c1eef92257b012ac83",
+  "bytes": 58559972,
+  "sha256": "39e6232f8507fa3555870af891770d46d95b75c667c1c87d11b27c80e3d3d6a2",
   "abis": [
     "arm64-v8a"
   ],
@@ -75,7 +75,7 @@
     },
     {
       "path": "lib/arm64-v8a/libil2cpp.so",
-      "bytes": 52167120,
+      "bytes": 52177472,
       "machine": 183,
       "loadSegments": [
         {

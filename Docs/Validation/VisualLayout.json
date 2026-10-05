@@ -1,0 +1,709 @@
+{
+  "status": "completed",
+  "utc": "2026-10-05T05:57:08.6110498Z",
+  "scope": "Editor visual layout; final/daily result cases are display-only fixtures",
+  "results": [
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        },
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        },
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        },
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        },
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        },
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "home",
+      "fixture": false,
+      "errors": [],
+      "centers": [
+        {
+          "image": "DailyArt",
+          "offset": 0.0
+        },
+        {
+          "image": "EndlessArt",
+          "offset": 0.0
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Journey",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Collection",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Settings",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "game",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Pause",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Tutorial",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Privacy",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Replace",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "Victory",
+      "fixture": false,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "FinalVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "DailyVictory",
+      "fixture": true,
+      "errors": [],
+      "centers": []
+    }
+  ]
+}

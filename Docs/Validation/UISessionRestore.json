@@ -1,5 +1,5 @@
 {
-  "utc": "2026-10-05T05:18:11.065574+00:00",
+  "utc": "2026-10-05T06:01:46.4351058Z",
   "savedFiles": [
     {
       "suffix": "",
@@ -13,5 +13,7 @@
       "suffix": ".tmp",
       "restored": true
     }
-  ]
+  ],
+  "backgroundRestored": true,
+  "playModeOptionsRestored": true
 }

@@ -7,32 +7,32 @@
     {
       "step": 0,
       "phase": "Began",
-      "x": 217.5,
-      "y": 393.0,
+      "x": 107.25,
+      "y": 196.5,
       "moves": 0
     },
     {
       "step": 1,
       "phase": "Moved",
-      "x": 463.125,
-      "y": 830.625,
+      "x": 230.8125,
+      "y": 415.3125,
       "moves": 0
     },
     {
       "step": 2,
       "phase": "Moved",
-      "x": 708.75,
-      "y": 1268.25,
+      "x": 354.375,
+      "y": 634.125,
       "moves": 0
     },
     {
       "step": 3,
       "phase": "Ended",
-      "x": 708.75,
-      "y": 1268.25,
+      "x": 354.375,
+      "y": 634.125,
       "moves": 1
     }
   ],
   "scope": "Runtime frames; virtual Touchscreen; Input System; real UI dispatch",
-  "utc": "2026-10-05T05:07:32.0710749Z"
+  "utc": "2026-10-05T05:58:18.8011711Z"
 }

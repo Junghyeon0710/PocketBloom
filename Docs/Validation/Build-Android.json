@@ -1,9 +1,9 @@
 {
     "result": "Succeeded",
     "output": "D:/Unity Projects/Codex/Builds/Android/PocketBloom-test.apk",
-    "utc": "2026-10-05T05:22:03.5535613Z",
+    "utc": "2026-10-05T06:11:24.7546154Z",
     "errors": 0,
-    "warnings": 7,
-    "bytes": 831154616,
-    "seconds": 45.451437299999995
+    "warnings": 3,
+    "bytes": 840368814,
+    "seconds": 28.566084399999998
 }

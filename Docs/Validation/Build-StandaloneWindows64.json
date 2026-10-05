@@ -1,9 +1,9 @@
 {
     "result": "Succeeded",
     "output": "D:/Unity Projects/Codex/Builds/Windows/PocketBloom.exe",
-    "utc": "2026-10-05T05:21:18.0878226Z",
+    "utc": "2026-10-05T06:02:38.4519910Z",
     "errors": 0,
     "warnings": 6,
-    "bytes": 155967610,
-    "seconds": 61.638251399999994
+    "bytes": 162292618,
+    "seconds": 50.425008899999995
 }
