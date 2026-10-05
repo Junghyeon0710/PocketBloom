@@ -38,8 +38,6 @@
 
 [v1.0.1-preview 테스트 릴리스](https://github.com/Junghyeon0710/PocketBloom/releases/tag/v1.0.1-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
 
-현재 저장소는 비공개이므로 권한이 있는 GitHub 계정으로 로그인해야 다운로드할 수 있습니다.
-
 | 파일 | 실행 방법과 범위 |
 |---|---|
 | [Android APK](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
