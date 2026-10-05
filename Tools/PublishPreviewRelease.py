@@ -25,7 +25,7 @@ def git(*args, input_data=None):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--publish", action="store_true", help="Create/upload/publish the prerelease; default is a read-only access check.")
-    parser.add_argument("--tag", default="v1.0.1-preview", help="Publish a new preview tag; published releases are never replaced.")
+    parser.add_argument("--tag", default="v1.0.2-preview", help="Publish a new preview tag; published releases are never replaced.")
     args = parser.parse_args()
     tag = args.tag
     remote = git("remote", "get-url", "origin")
