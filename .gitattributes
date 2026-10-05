@@ -19,3 +19,4 @@
 *.dll binary
 # Preserve formatting in the imported TextMeshPro distribution.
 "Assets/TextMesh Pro/**" -whitespace
+Assets/PocketBloom/Art/NotoSansKR-OFL.txt -whitespace

@@ -1,0 +1,6 @@
+{
+  "name": "PocketBloom.Core",
+  "rootNamespace": "PocketBloom",
+  "autoReferenced": true,
+  "noEngineReferences": true
+}
