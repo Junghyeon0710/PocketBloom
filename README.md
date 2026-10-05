@@ -18,7 +18,7 @@
   <img src="Docs/Media/pocket-bloom-highlight.gif" width="320" alt="실제 플레이: 꽃 블록 배치, 줄 완성, 여행 목표 달성, 정원 컬렉션">
 </p>
 
-[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
+[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
 
 2026-10-05 새 UI를 적용한 Unity 에디터의 실제 Game View를 다시 녹화하고 컷 편집·짧은 페이드·한국어 자막을 적용했습니다. 실제 게임 음악과 효과음이 들어 있습니다. 자동 터치 입력으로 정상 플레이한 영상이며 Android 실기기 촬영은 아닙니다. GIF는 무음 미리보기입니다.
 
@@ -36,15 +36,15 @@
 
 ## 다운로드와 실행
 
-[v1.0.1-preview 테스트 릴리스](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/tag/v1.0.1-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
+[v1.0.1-preview 테스트 릴리스](https://github.com/Junghyeon0710/PocketBloom/releases/tag/v1.0.1-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
 
 현재 저장소는 비공개이므로 권한이 있는 GitHub 계정으로 로그인해야 다운로드할 수 있습니다.
 
 | 파일 | 실행 방법과 범위 |
 |---|---|
-| [Android APK](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
-| [Windows ZIP](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
-| [StoreKit ZIP](https://github.com/Junghyeon0710/Codex-2026-10-04_13-12-56/releases/download/v1.0.1-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
+| [Android APK](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
+| [Windows ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
+| [StoreKit ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
 
 Unity에서 실행하려면 **6000.6.2f1**로 프로젝트를 열고 패키지 가져오기가 끝난 뒤 `Assets/PocketBloom/Scenes/PocketBloom.unity`를 열어 Play를 누릅니다. 씬을 다시 생성할 때는 `Pocket Bloom > Create or Update Game Scene` 메뉴를 사용합니다.
 
