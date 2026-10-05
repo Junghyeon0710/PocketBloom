@@ -1,0 +1,239 @@
+{
+  "status": "completed",
+  "error": null,
+  "fps": 30,
+  "moments": [
+    {
+      "label": "home",
+      "seconds": 0.0,
+      "screen": "home",
+      "stage": 0,
+      "moves": 0,
+      "score": 0,
+      "lines": 0,
+      "combo": 0
+    },
+    {
+      "label": "journey",
+      "seconds": 2.5,
+      "screen": "journey",
+      "stage": 0,
+      "moves": 0,
+      "score": 0,
+      "lines": 0,
+      "combo": 0
+    },
+    {
+      "label": "stage-1",
+      "seconds": 4.5,
+      "screen": "game",
+      "stage": 1,
+      "moves": 0,
+      "score": 0,
+      "lines": 0,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 6.9,
+      "screen": "game",
+      "stage": 1,
+      "moves": 1,
+      "score": 95,
+      "lines": 1,
+      "combo": 1
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 8.966666,
+      "screen": "game",
+      "stage": 1,
+      "moves": 2,
+      "score": 110,
+      "lines": 1,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 11.0333338,
+      "screen": "game",
+      "stage": 1,
+      "moves": 3,
+      "score": 125,
+      "lines": 1,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 12.6,
+      "screen": "game",
+      "stage": 1,
+      "moves": 4,
+      "score": 140,
+      "lines": 1,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 14.166667,
+      "screen": "game",
+      "stage": 1,
+      "moves": 5,
+      "score": 225,
+      "lines": 2,
+      "combo": 1
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 15.7333336,
+      "screen": "game",
+      "stage": 1,
+      "moves": 6,
+      "score": 235,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 17.3,
+      "screen": "game",
+      "stage": 1,
+      "moves": 7,
+      "score": 255,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 18.8666668,
+      "screen": "game",
+      "stage": 1,
+      "moves": 8,
+      "score": 270,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 20.4333324,
+      "screen": "game",
+      "stage": 1,
+      "moves": 9,
+      "score": 285,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "stage-1-move",
+      "seconds": 22.0,
+      "screen": "game",
+      "stage": 1,
+      "moves": 10,
+      "score": 380,
+      "lines": 3,
+      "combo": 1
+    },
+    {
+      "label": "stage-1-win",
+      "seconds": 22.4333324,
+      "screen": "game",
+      "stage": 1,
+      "moves": 10,
+      "score": 380,
+      "lines": 3,
+      "combo": 1
+    },
+    {
+      "label": "stage-2",
+      "seconds": 24.9333324,
+      "screen": "game",
+      "stage": 2,
+      "moves": 0,
+      "score": 0,
+      "lines": 0,
+      "combo": 0
+    },
+    {
+      "label": "stage-2-move",
+      "seconds": 27.0,
+      "screen": "game",
+      "stage": 2,
+      "moves": 1,
+      "score": 130,
+      "lines": 1,
+      "combo": 1
+    },
+    {
+      "label": "stage-2-move",
+      "seconds": 28.8,
+      "screen": "game",
+      "stage": 2,
+      "moves": 2,
+      "score": 145,
+      "lines": 1,
+      "combo": 0
+    },
+    {
+      "label": "stage-2-move",
+      "seconds": 30.6,
+      "screen": "game",
+      "stage": 2,
+      "moves": 3,
+      "score": 275,
+      "lines": 2,
+      "combo": 1
+    },
+    {
+      "label": "stage-2-move",
+      "seconds": 32.4,
+      "screen": "game",
+      "stage": 2,
+      "moves": 4,
+      "score": 290,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "collection",
+      "seconds": 33.8,
+      "screen": "collection",
+      "stage": 2,
+      "moves": 4,
+      "score": 290,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "settings",
+      "seconds": 36.3,
+      "screen": "settings",
+      "stage": 2,
+      "moves": 4,
+      "score": 290,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "english",
+      "seconds": 37.6333351,
+      "screen": "settings",
+      "stage": 2,
+      "moves": 4,
+      "score": 290,
+      "lines": 2,
+      "combo": 0
+    },
+    {
+      "label": "end",
+      "seconds": 39.6333351,
+      "screen": "home",
+      "stage": 2,
+      "moves": 4,
+      "score": 290,
+      "lines": 2,
+      "combo": 0
+    }
+  ],
+  "scope": "Unity Editor gameplay recorded with production Input System touch events; no synthetic scores or board edits",
+  "utc": "2026-10-05T03:26:11.4347936Z"
+}

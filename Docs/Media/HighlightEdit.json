@@ -1,0 +1,97 @@
+{
+  "source_scope": "Unity Editor recording; automated real Input System touch events",
+  "source_sha256": "567ddac12b56b3e45ea25f0b4c25cbefd166a12cea9669be6d099770818e6513",
+  "requested_duration_seconds": 30.3,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "audio": "Recorded procedural game music and effects; gain and short fades applied",
+  "timeline": [
+    {
+      "source_start": 0.15,
+      "source_end": 2.3,
+      "output_start": 0.0,
+      "caption": "한 칸씩, 나만의 작은 정원"
+    },
+    {
+      "source_start": 2.65,
+      "source_end": 4.35,
+      "output_start": 2.15,
+      "caption": "36개 정원을 여행해요"
+    },
+    {
+      "source_start": 4.7,
+      "source_end": 7.5,
+      "output_start": 3.85,
+      "caption": "끌어놓고 · 한 줄을 피우고"
+    },
+    {
+      "source_start": 8.0,
+      "source_end": 10.9,
+      "output_start": 6.65,
+      "caption": "세 조각의 순서를 생각해요"
+    },
+    {
+      "source_start": 11.75,
+      "source_end": 14.75,
+      "output_start": 9.55,
+      "caption": "빈 공간이 다시 꽃필 때"
+    },
+    {
+      "source_start": 16.8,
+      "source_end": 19.6,
+      "output_start": 12.55,
+      "caption": "다음 한 수를 준비해요"
+    },
+    {
+      "source_start": 20.65,
+      "source_end": 24.65,
+      "output_start": 15.35,
+      "caption": "목표 달성 · 다음 정원으로"
+    },
+    {
+      "source_start": 25.1,
+      "source_end": 27.55,
+      "output_start": 19.35,
+      "caption": "새로운 목표에 도전해요"
+    },
+    {
+      "source_start": 29.75,
+      "source_end": 31.65,
+      "output_start": 21.8,
+      "caption": "가로와 세로, 줄을 완성해요"
+    },
+    {
+      "source_start": 34.0,
+      "source_end": 36.1,
+      "output_start": 23.7,
+      "caption": "플레이로 모으는 꽃 컬렉션"
+    },
+    {
+      "source_start": 36.6,
+      "source_end": 39.45,
+      "output_start": 25.8,
+      "caption": "한국어와 영어 · 내 취향대로"
+    },
+    {
+      "source_start": 39.9,
+      "source_end": 41.55,
+      "output_start": 28.65,
+      "caption": "Pocket Bloom · 오늘도 한 칸"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "Docs/Media/pocket-bloom-highlight.mp4",
+      "bytes": 2100452,
+      "sha256": "2d46989cc4164bc1b8f253caa0ebbd8054b815291af05e64d2a0646b486847ce"
+    },
+    {
+      "file": "Docs/Media/pocket-bloom-highlight.gif",
+      "bytes": 1035379,
+      "sha256": "fd8287182360df3aaaca708ff8acf7889eba00e876e21821bed985fffb4e6118"
+    }
+  ],
+  "video_decode": "passed",
+  "gif_decode": "passed"
+}
