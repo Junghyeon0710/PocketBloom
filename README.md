@@ -12,13 +12,15 @@
 
 사용자가 선택한 시안을 기준으로 햇살 정원·고양이 홈, 초록·코랄 로고, 크림색 카드와 세이지색 플레이 보드를 적용했습니다. ImageGen 삽화와 실제 uGUI 버튼·한국어/영어 문자·점수·터치 보드를 결합했습니다. [선택 시안과 적용 기록](Docs/UIRefresh/README.md)에 자산 프롬프트와 구현 내용을 정리했습니다.
 
+카드 삽화와 제목을 실제 보이는 영역의 중앙에 맞추고 화면 전체의 여백·열 간격을 통일했습니다. 목표 달성 화면에는 고양이 꽃다발 삽화, 획득 꽃·점수·씨앗 카드와 짧은 축하 연출을 적용했습니다. 움직임 줄이기 설정에서는 즉시 최종 결과를 표시합니다. 한/영 화면·팝업 72조합과 터치·저장 흐름을 확인했습니다.
+
 ## 플레이 하이라이트
 
 <p align="center">
   <img src="Docs/Media/pocket-bloom-highlight.gif" width="320" alt="실제 플레이: 꽃 블록 배치, 줄 완성, 여행 목표 달성, 정원 컬렉션">
 </p>
 
-[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
+[소리 포함 30초 하이라이트 MP4](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.2-preview/pocket-bloom-highlight.mp4) · [녹화·편집 과정과 재현 방법](Docs/Media/README.md)
 
 2026-10-05 새 UI를 적용한 Unity 에디터의 실제 Game View를 다시 녹화하고 컷 편집·짧은 페이드·한국어 자막을 적용했습니다. 실제 게임 음악과 효과음이 들어 있습니다. 자동 터치 입력으로 정상 플레이한 영상이며 Android 실기기 촬영은 아닙니다. GIF는 무음 미리보기입니다.
 
@@ -36,13 +38,13 @@
 
 ## 다운로드와 실행
 
-[v1.0.1-preview 테스트 릴리스](https://github.com/Junghyeon0710/PocketBloom/releases/tag/v1.0.1-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
+[v1.0.2-preview 테스트 릴리스](https://github.com/Junghyeon0710/PocketBloom/releases/tag/v1.0.2-preview)에 설치 파일과 스토어 자료, 하이라이트 영상이 있습니다.
 
 | 파일 | 실행 방법과 범위 |
 |---|---|
-| [Android APK](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
-| [Windows ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
-| [StoreKit ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.1-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
+| [Android APK](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.2-preview/PocketBloom-test.apk) | Android 8.0(API 26) 이상 ARM64용. 테스트용 debug 서명이며 실제 단말 설치·플레이 검증은 남아 있습니다. |
+| [Windows ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.2-preview/PocketBloom-Windows.zip) | 모두 압축 해제한 뒤 `PocketBloom.exe` 실행. 빌드는 성공했으며 패키지 직접 조작 검증은 남아 있습니다. |
+| [StoreKit ZIP](https://github.com/Junghyeon0710/PocketBloom/releases/download/v1.0.2-preview/PocketBloom-StoreKit.zip) | 배너, 앱 아이콘, 한국어·영어 등록 문구와 원본 자료. |
 
 Unity에서 실행하려면 **6000.6.2f1**로 프로젝트를 열고 패키지 가져오기가 끝난 뒤 `Assets/PocketBloom/Scenes/PocketBloom.unity`를 열어 Play를 누릅니다. 씬을 다시 생성할 때는 `Pocket Bloom > Create or Update Game Scene` 메뉴를 사용합니다.
 
@@ -67,7 +69,7 @@ Unity 6, URP, Input System, uGUI/TextMeshPro를 사용했습니다. 퍼즐 규�
 |---|---|
 | 규칙·광고 보상 처리 테스트 | 10/04 EditMode 테스트 13/13 통과. 실제 광고 송출을 검증한 결과는 아닙니다. |
 | 퍼즐 콘텐츠 | 36단계 승리 경로와 합법 배치 10,000수 확인. |
-| UI·입력 | 에디터 화면 흐름, 가상 터치 드래그와 30개 화면·안전 영역 조합 확인. |
+| UI·입력 | 에디터 화면·팝업 72조합에서 글자 높이·잘림·버튼 경계·삽화 중심·결과 표시 확인. 가상 터치 드래그·다음 단계·중복 보상 방지·저장 복원 통과. |
 | Android 빌드 | ARM64 IL2CPP APK, 오류 0개. debug v2 서명, 16KB ELF·ZIP 정렬 검사 통과. |
 | Windows 빌드 | 오류 0개. 에디터 플레이와 패키지 직접 실행 검증은 별도 범위입니다. |
 | 플레이 미디어 | 실제 플레이 녹화, 기존 프로필·저장 파일 복원, MP4·GIF 전체 디코딩 검사 통과. |

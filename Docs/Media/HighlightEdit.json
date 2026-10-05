@@ -1,6 +1,6 @@
 {
   "source_scope": "Unity Editor recording; automated real Input System touch events",
-  "source_sha256": "41bf448ccbd5f98cff4d16d70101e830678fd6b1fb7adbfee4e4c210b70c2c82",
+  "source_sha256": "e5799605bf75eaeea5a91ec27e050df4475dd50fb692e5f5f7f9a43886027c92",
   "requested_duration_seconds": 30.3,
   "width": 1080,
   "height": 1920,
@@ -83,13 +83,13 @@
   "outputs": [
     {
       "file": "Docs/Media/pocket-bloom-highlight.mp4",
-      "bytes": 4462420,
-      "sha256": "0a468006c4e4a8c3334e112b0203986ba894288910665e1e1ed618e6f488d01f"
+      "bytes": 4687416,
+      "sha256": "237f425703e1f5c990273532df61843616f62cec14b31d17d957a32fd0f9c9c8"
     },
     {
       "file": "Docs/Media/pocket-bloom-highlight.gif",
-      "bytes": 1821965,
-      "sha256": "3af3c27e79c3b8eccf228eb7cea89de922d19af13fc56ea26f99fb16a0d406e4"
+      "bytes": 1927420,
+      "sha256": "874148109e645734bc325f22d30bcede982ce388636fa67e95d3bcba0b413406"
     }
   ],
   "video_decode": "passed",

@@ -1,6 +1,6 @@
 # 실제 플레이 하이라이트
 
-2026-10-05 Sunlit Garden UI로 다시 촬영했습니다. [선택 시안과 UI 적용 기록](../UIRefresh/README.md)을 참고하세요. 영상의 테두리·제목·한국어 자막도 새 UI와 같은 크림·녹색 팔레트로 맞췄습니다.
+2026-10-05 카드 삽화의 중앙 정렬, 전체 화면의 여백과 새 고양이 꽃다발 성공 팝업을 반영한 Sunlit Garden UI로 다시 촬영했습니다. [선택 시안과 UI 적용 기록](../UIRefresh/README.md)을 참고하세요. 영상의 테두리·제목·한국어 자막도 새 UI와 같은 크림·녹색 팔레트로 맞췄습니다.
 
 `pocket-bloom-highlight.mp4`는 Unity 6000.6.2f1의 실제 Game View를 Unity Recorder 5.1.7로 녹화한 뒤 FFmpeg로 편집한 영상입니다. 1080×1920, 30fps, 약 30초이며 실제 게임 음악·효과음을 포함합니다. README용 `pocket-bloom-highlight.gif`는 같은 영상의 무음 미리보기입니다.
 
