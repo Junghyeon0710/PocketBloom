@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "duration": 0.87,
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.AllCampaignStagesHaveAWinningUnassistedRoute",
+      "Status": "Passed",
+      "Duration": 0.1873586,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.DailySeedAndCopyResumeAreDeterministic",
+      "Status": "Passed",
+      "Duration": 0.0098399,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.InvalidPlacementDoesNotMutateRunOrRng",
+      "Status": "Passed",
+      "Duration": 0.0008693,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.NoLegalMoveEndsRunAndReviveIsLimitedToOne",
+      "Status": "Passed",
+      "Duration": 0.0004516,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.RowAndColumnClearSimultaneouslyWithoutDoubleCounting",
+      "Status": "Passed",
+      "Duration": 0.0006876,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.TenThousandRandomLegalMovesMaintainInvariants",
+      "Status": "Passed",
+      "Duration": 0.6407844,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.TutorialFirstPlacementClearsOneRow",
+      "Status": "Passed",
+      "Duration": 0.0003904,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "PocketBloom.Tests.BloomBoardTests.WinTakesPriorityOverMoveLimit",
+      "Status": "Passed",
+      "Duration": 0.0002221,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

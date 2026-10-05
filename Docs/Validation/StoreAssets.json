@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-04T17:05:32.3515387Z",
+  "scope": "Local Google Play listing draft: file dimensions, PNG formats and text length. No account upload, app-name clearance or device screenshots verified.",
+  "assets": [
+    {
+      "file": "feature-graphic.png",
+      "width": 1024,
+      "height": 500,
+      "pixelFormat": "Format24bppRgb",
+      "bytes": 1166406,
+      "sha256": "EEF960FDF23223C8174ED9652B4F1419957FA3A9C49735E4B03208EE2F711801"
+    },
+    {
+      "file": "app-icon.png",
+      "width": 512,
+      "height": 512,
+      "pixelFormat": "Format32bppArgb",
+      "bytes": 691133,
+      "sha256": "46E14495675EC7132918E11BAEF8ABB6EB1F313E9EFE007CDB0673997F77985E"
+    }
+  ],
+  "text": [
+    {
+      "locale": "ko-KR",
+      "field": "title",
+      "characters": 5,
+      "limit": 30
+    },
+    {
+      "locale": "ko-KR",
+      "field": "short-description",
+      "characters": 39,
+      "limit": 80
+    },
+    {
+      "locale": "ko-KR",
+      "field": "full-description",
+      "characters": 486,
+      "limit": 4000
+    },
+    {
+      "locale": "en-US",
+      "field": "title",
+      "characters": 12,
+      "limit": 30
+    },
+    {
+      "locale": "en-US",
+      "field": "short-description",
+      "characters": 75,
+      "limit": 80
+    },
+    {
+      "locale": "en-US",
+      "field": "full-description",
+      "characters": 981,
+      "limit": 4000
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "Stage": 1,
+    "Seed": 912,
+    "Won": true,
+    "Score": 380,
+    "Target": 320,
+    "Moves": 10,
+    "Limit": 24
+  },
+  {
+    "Stage": 2,
+    "Seed": 1085,
+    "Won": true,
+    "Score": 405,
+    "Target": 385,
+    "Moves": 7,
+    "Limit": 24
+  },
+  {
+    "Stage": 3,
+    "Seed": 1258,
+    "Won": true,
+    "Score": 455,
+    "Target": 450,
+    "Moves": 11,
+    "Limit": 25
+  },
+  {
+    "Stage": 4,
+    "Seed": 1431,
+    "Won": true,
+    "Score": 520,
+    "Target": 515,
+    "Moves": 7,
+    "Limit": 25
+  },
+  {
+    "Stage": 5,
+    "Seed": 1604,
+    "Won": true,
+    "Score": 595,
+    "Target": 580,
+    "Moves": 11,
+    "Limit": 25
+  },
+  {
+    "Stage": 6,
+    "Seed": 1777,
+    "Won": true,
+    "Score": 700,
+    "Target": 645,
+    "Moves": 13,
+    "Limit": 26
+  },
+  {
+    "Stage": 7,
+    "Seed": 1950,
+    "Won": true,
+    "Score": 710,
+    "Target": 710,
+    "Moves": 14,
+    "Limit": 26
+  },
+  {
+    "Stage": 8,
+    "Seed": 2123,
+    "Won": true,
+    "Score": 840,
+    "Target": 775,
+    "Moves": 16,
+    "Limit": 26
+  },
+  {
+    "Stage": 9,
+    "Seed": 2296,
+    "Won": true,
+    "Score": 855,
+    "Target": 840,
+    "Moves": 17,
+    "Limit": 27
+  },
+  {
+    "Stage": 10,
+    "Seed": 2469,
+    "Won": true,
+    "Score": 925,
+    "Target": 905,
+    "Moves": 16,
+    "Limit": 27
+  },
+  {
+    "Stage": 11,
+    "Seed": 2642,
+    "Won": true,
+    "Score": 980,
+    "Target": 970,
+    "Moves": 20,
+    "Limit": 27
+  },
+  {
+    "Stage": 12,
+    "Seed": 2815,
+    "Won": true,
+    "Score": 1040,
+    "Target": 1035,
+    "Moves": 17,
+    "Limit": 28
+  },
+  {
+    "Stage": 13,
+    "Seed": 2988,
+    "Won": true,
+    "Score": 1155,
+    "Target": 1100,
+    "Moves": 16,
+    "Limit": 28
+  },
+  {
+    "Stage": 14,
+    "Seed": 3161,
+    "Won": true,
+    "Score": 1250,
+    "Target": 1165,
+    "Moves": 16,
+    "Limit": 28
+  },
+  {
+    "Stage": 15,
+    "Seed": 3335,
+    "Won": true,
+    "Score": 1290,
+    "Target": 1230,
+    "Moves": 17,
+    "Limit": 29
+  },
+  {
+    "Stage": 16,
+    "Seed": 3507,
+    "Won": true,
+    "Score": 1420,
+    "Target": 1295,
+    "Moves": 23,
+    "Limit": 29
+  },
+  {
+    "Stage": 17,
+    "Seed": 3680,
+    "Won": true,
+    "Score": 1485,
+    "Target": 1360,
+    "Moves": 19,
+    "Limit": 29
+  },
+  {
+    "Stage": 18,
+    "Seed": 3853,
+    "Won": true,
+    "Score": 1455,
+    "Target": 1425,
+    "Moves": 19,
+    "Limit": 30
+  },
+  {
+    "Stage": 19,
+    "Seed": 4026,
+    "Won": true,
+    "Score": 1565,
+    "Target": 1490,
+    "Moves": 25,
+    "Limit": 30
+  },
+  {
+    "Stage": 20,
+    "Seed": 4199,
+    "Won": true,
+    "Score": 1570,
+    "Target": 1555,
+    "Moves": 22,
+    "Limit": 30
+  },
+  {
+    "Stage": 21,
+    "Seed": 4372,
+    "Won": true,
+    "Score": 1700,
+    "Target": 1620,
+    "Moves": 25,
+    "Limit": 31
+  },
+  {
+    "Stage": 22,
+    "Seed": 4546,
+    "Won": true,
+    "Score": 1795,
+    "Target": 1685,
+    "Moves": 26,
+    "Limit": 31
+  },
+  {
+    "Stage": 23,
+    "Seed": 4718,
+    "Won": true,
+    "Score": 1750,
+    "Target": 1750,
+    "Moves": 31,
+    "Limit": 31
+  },
+  {
+    "Stage": 24,
+    "Seed": 4891,
+    "Won": true,
+    "Score": 1960,
+    "Target": 1815,
+    "Moves": 30,
+    "Limit": 32
+  },
+  {
+    "Stage": 25,
+    "Seed": 5066,
+    "Won": true,
+    "Score": 1960,
+    "Target": 1880,
+    "Moves": 32,
+    "Limit": 32
+  },
+  {
+    "Stage": 26,
+    "Seed": 5237,
+    "Won": true,
+    "Score": 1980,
+    "Target": 1945,
+    "Moves": 23,
+    "Limit": 32
+  },
+  {
+    "Stage": 27,
+    "Seed": 5410,
+    "Won": true,
+    "Score": 2090,
+    "Target": 2010,
+    "Moves": 21,
+    "Limit": 33
+  },
+  {
+    "Stage": 28,
+    "Seed": 5586,
+    "Won": true,
+    "Score": 2085,
+    "Target": 2075,
+    "Moves": 31,
+    "Limit": 33
+  },
+  {
+    "Stage": 29,
+    "Seed": 5756,
+    "Won": true,
+    "Score": 2155,
+    "Target": 2140,
+    "Moves": 32,
+    "Limit": 33
+  },
+  {
+    "Stage": 30,
+    "Seed": 5929,
+    "Won": true,
+    "Score": 2285,
+    "Target": 2205,
+    "Moves": 28,
+    "Limit": 34
+  },
+  {
+    "Stage": 31,
+    "Seed": 6103,
+    "Won": true,
+    "Score": 2300,
+    "Target": 2270,
+    "Moves": 33,
+    "Limit": 34
+  },
+  {
+    "Stage": 32,
+    "Seed": 6275,
+    "Won": true,
+    "Score": 2415,
+    "Target": 2335,
+    "Moves": 31,
+    "Limit": 34
+  },
+  {
+    "Stage": 33,
+    "Seed": 6448,
+    "Won": true,
+    "Score": 2435,
+    "Target": 2400,
+    "Moves": 35,
+    "Limit": 35
+  },
+  {
+    "Stage": 34,
+    "Seed": 6625,
+    "Won": true,
+    "Score": 2510,
+    "Target": 2465,
+    "Moves": 34,
+    "Limit": 35
+  },
+  {
+    "Stage": 35,
+    "Seed": 6798,
+    "Won": true,
+    "Score": 2555,
+    "Target": 2530,
+    "Moves": 31,
+    "Limit": 35
+  },
+  {
+    "Stage": 36,
+    "Seed": 6968,
+    "Won": true,
+    "Score": 2670,
+    "Target": 2595,
+    "Moves": 31,
+    "Limit": 36
+  }
+]

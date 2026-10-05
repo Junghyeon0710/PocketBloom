@@ -1,0 +1,15 @@
+{
+  "scope": "Unity Editor Play Mode; Korean privacy dialog; ads disabled; no policy URL configured",
+  "utc": "2026-10-04T16:59:25.2589481Z",
+  "status": "passed",
+  "width": 540,
+  "height": 960,
+  "truncatedTextCount": 0,
+  "screenshot": "privacy-ko.png",
+  "visualReview": "Title, explanation and confirmation button visible with no clipping. Editor Step used to refresh the rendered frame.",
+  "notVerified": [
+    "Physical Android device",
+    "Privacy policy URL button",
+    "CMP and actual ads"
+  ]
+}

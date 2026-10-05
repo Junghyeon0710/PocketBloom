@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "moves": 1,
+  "lines": 1,
+  "score": 95,
+  "records": [
+    {
+      "step": 0,
+      "phase": "Began",
+      "x": 108.75,
+      "y": 133.5,
+      "moves": 0
+    },
+    {
+      "step": 1,
+      "phase": "Moved",
+      "x": 231.5625,
+      "y": 358.6875,
+      "moves": 0
+    },
+    {
+      "step": 2,
+      "phase": "Moved",
+      "x": 354.375,
+      "y": 583.875,
+      "moves": 0
+    },
+    {
+      "step": 3,
+      "phase": "Ended",
+      "x": 354.375,
+      "y": 583.875,
+      "moves": 0
+    }
+  ]
+}

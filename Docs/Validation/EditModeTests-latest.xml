@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="13" result="Passed" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.3174702">
+  <test-suite type="TestSuite" id="1000" name="Pocket Bloom" fullname="Pocket Bloom" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.317470" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1016" name="PocketBloom.Tests.dll" fullname="D:/Unity Projects/Codex/Library/ScriptAssemblies/PocketBloom.Tests.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.304874" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46500" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1017" name="PocketBloom" fullname="PocketBloom" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.304144" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1018" name="Tests" fullname="PocketBloom.Tests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.303855" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="BloomBoardTests" fullname="PocketBloom.Tests.BloomBoardTests" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="1.287917" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1008" name="AllCampaignStagesHaveAWinningUnassistedRoute" fullname="PocketBloom.Tests.BloomBoardTests.AllCampaignStagesHaveAWinningUnassistedRoute" methodname="AllCampaignStagesHaveAWinningUnassistedRoute" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="521794369" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:31Z" duration="0.317808" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="DailySeedAndCopyResumeAreDeterministic" fullname="PocketBloom.Tests.BloomBoardTests.DailySeedAndCopyResumeAreDeterministic" methodname="DailySeedAndCopyResumeAreDeterministic" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="434070" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:31Z" duration="0.028364" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="InvalidPlacementDoesNotMutateRunOrRng" fullname="PocketBloom.Tests.BloomBoardTests.InvalidPlacementDoesNotMutateRunOrRng" methodname="InvalidPlacementDoesNotMutateRunOrRng" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="2112039514" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:31Z" duration="0.001500" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="NoLegalMoveEndsRunAndReviveIsLimitedToOne" fullname="PocketBloom.Tests.BloomBoardTests.NoLegalMoveEndsRunAndReviveIsLimitedToOne" methodname="NoLegalMoveEndsRunAndReviveIsLimitedToOne" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="1272140039" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:31Z" duration="0.000744" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="RowAndColumnClearSimultaneouslyWithoutDoubleCounting" fullname="PocketBloom.Tests.BloomBoardTests.RowAndColumnClearSimultaneouslyWithoutDoubleCounting" methodname="RowAndColumnClearSimultaneouslyWithoutDoubleCounting" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="365531287" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:31Z" duration="0.001029" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="TenThousandRandomLegalMovesMaintainInvariants" fullname="PocketBloom.Tests.BloomBoardTests.TenThousandRandomLegalMovesMaintainInvariants" methodname="TenThousandRandomLegalMovesMaintainInvariants" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="704507242" result="Passed" start-time="2026-10-04 13:12:31Z" end-time="2026-10-04 13:12:32Z" duration="0.913909" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="TutorialFirstPlacementClearsOneRow" fullname="PocketBloom.Tests.BloomBoardTests.TutorialFirstPlacementClearsOneRow" methodname="TutorialFirstPlacementClearsOneRow" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="656641779" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000453" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="WinTakesPriorityOverMoveLimit" fullname="PocketBloom.Tests.BloomBoardTests.WinTakesPriorityOverMoveLimit" methodname="WinTakesPriorityOverMoveLimit" classname="PocketBloom.Tests.BloomBoardTests" runstate="Runnable" seed="1175325856" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000330" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1010" name="BloomRewardLedgerTests" fullname="PocketBloom.Tests.BloomRewardLedgerTests" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.014247" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1013" name="ChangedRunCannotReceiveAnOldReward" fullname="PocketBloom.Tests.BloomRewardLedgerTests.ChangedRunCannotReceiveAnOldReward" methodname="ChangedRunCannotReceiveAnOldReward" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" seed="1653025207" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.001619" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="DelayedRewardBelongsToOriginalRequestWhileAnotherAdIsShowing" fullname="PocketBloom.Tests.BloomRewardLedgerTests.DelayedRewardBelongsToOriginalRequestWhileAnotherAdIsShowing" methodname="DelayedRewardBelongsToOriginalRequestWhileAnotherAdIsShowing" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" seed="885231726" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000649" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="DisplayFailureRejectsLateRewardsAndFailsOnce" fullname="PocketBloom.Tests.BloomRewardLedgerTests.DisplayFailureRejectsLateRewardsAndFailsOnce" methodname="DisplayFailureRejectsLateRewardsAndFailsOnce" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" seed="297501508" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000612" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="RewardAfterCloseIsDeliveredOnce" fullname="PocketBloom.Tests.BloomRewardLedgerTests.RewardAfterCloseIsDeliveredOnce" methodname="RewardAfterCloseIsDeliveredOnce" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" seed="1977453429" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000436" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="RewardBeforeCloseIsDeliveredOnceAndAllowsNextAdOnlyAfterClose" fullname="PocketBloom.Tests.BloomRewardLedgerTests.RewardBeforeCloseIsDeliveredOnceAndAllowsNextAdOnlyAfterClose" methodname="RewardBeforeCloseIsDeliveredOnceAndAllowsNextAdOnlyAfterClose" classname="PocketBloom.Tests.BloomRewardLedgerTests" runstate="Runnable" seed="2081509898" result="Passed" start-time="2026-10-04 13:12:32Z" end-time="2026-10-04 13:12:32Z" duration="0.000467" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/User/AppData/LocalLow/Pocket Bloom Studio/Pocket Bloom\TestResults.xml
+Saving results to: C:/Users/User/AppData/LocalLow/Pocket Bloom Studio/Pocket Bloom\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

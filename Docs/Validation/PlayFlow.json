@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "Journey 1 won through production placement and animation in 10 moves",
+    "Result revisit is idempotent",
+    "Next stage starts through result button",
+    "Free undo and shuffle limits work",
+    "Actual disk save and reload preserve active board, RNG and tools",
+    "Settings language toggle renders without clipped text",
+    "Collection screen renders without clipped text"
+  ],
+  "utc": "2026-10-04T06:43:48.3912073Z"
+}

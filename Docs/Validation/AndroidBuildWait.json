@@ -1,0 +1,10 @@
+{
+  "observedUtc": "2026-10-04T11:55:41.7761137Z",
+  "editorPid": 43460,
+  "observedWindow": "Building Player (busy for 07:04)...",
+  "androidApkExists": false,
+  "androidBuildReportExists": false,
+  "state": "Build process still alive; completion unverified",
+  "windowControlError": "Computer Use app approval timed out; activate_window timed out",
+  "action": "No restart or cancellation performed"
+}

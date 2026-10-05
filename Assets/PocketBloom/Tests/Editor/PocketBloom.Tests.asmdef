@@ -1,0 +1,7 @@
+{
+  "name": "PocketBloom.Tests",
+  "references": ["PocketBloom.Core"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

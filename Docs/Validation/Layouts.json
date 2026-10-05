@@ -1,0 +1,245 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "ko",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 960,
+      "language": "en",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "ko",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 540,
+      "height": 1170,
+      "language": "en",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "ko",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "home",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "journey",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "collection",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "settings",
+      "clipped": [],
+      "offscreen": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "screen": "game",
+      "clipped": [],
+      "offscreen": []
+    }
+  ]
+}
