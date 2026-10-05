@@ -9,7 +9,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-TAG = "v1.0.0-preview"
 FILES = [Path("Builds/Android/PocketBloom-test.apk"), Path("Builds/PocketBloom-Windows.zip"),
          Path("Builds/PocketBloom-StoreKit.zip"), Path("Docs/Media/pocket-bloom-highlight.mp4")]
 
@@ -26,7 +25,9 @@ def git(*args, input_data=None):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--publish", action="store_true", help="Create/upload/publish the prerelease; default is a read-only access check.")
+    parser.add_argument("--tag", default="v1.0.1-preview", help="Publish a new preview tag; published releases are never replaced.")
     args = parser.parse_args()
+    tag = args.tag
     remote = git("remote", "get-url", "origin")
     parsed = urllib.parse.urlparse(remote)
     if parsed.scheme != "https" or parsed.hostname != "github.com" or parsed.username or parsed.password:
@@ -59,7 +60,7 @@ def main():
         raise RuntimeError("Repository write access was not confirmed.")
     head = git("rev-parse", "HEAD")
     if not args.publish:
-        print(json.dumps(dict(repository=repo, write_access=True, default_branch=info["default_branch"], tag=TAG)))
+        print(json.dumps(dict(repository=repo, write_access=True, default_branch=info["default_branch"], tag=tag)))
         return
     remote_head = api(base + "/commits/" + urllib.parse.quote(info["default_branch"], safe=""))
     if not remote_head or remote_head["sha"] != head:
@@ -67,10 +68,10 @@ def main():
     for file in FILES:
         if not file.is_file():
             raise RuntimeError(f"Missing artifact: {file}")
-    release = api(base + "/releases/tags/" + TAG)
+    release = api(base + "/releases/tags/" + urllib.parse.quote(tag, safe=""))
     if release is None:
-        release = api(base + "/releases", "POST", dict(tag_name=TAG, target_commitish=head,
-                      name="Pocket Bloom 1.0.0 — 테스트 배포본", draft=True, prerelease=True, make_latest="false",
+        release = api(base + "/releases", "POST", dict(tag_name=tag, target_commitish=head,
+                      name="Pocket Bloom " + tag.removeprefix("v") + " — Sunlit Garden", draft=True, prerelease=True, make_latest="false",
                       body=Path("Docs/PreviewRelease.ko.md").read_text(encoding="utf-8")))
     elif not release["draft"]:
         raise RuntimeError("This tag already has a published release; choose a new tag rather than replacing it.")
@@ -94,7 +95,7 @@ def main():
     for asset in evidence:
         asset["url"] = published[asset["name"]]["browser_download_url"]
     record = dict(repository=repo, visibility=info.get("visibility"), source_commit=head,
-                  tag=TAG, url=release["html_url"], assets=evidence)
+                  tag=tag, url=release["html_url"], assets=evidence)
     # 푸시된 소스 커밋 이후의 전달 확인 자료이므로 원본 녹화 폴더에 보존한다.
     path = Path("Recordings/PocketBloom/release-delivery.json")
     path.parent.mkdir(parents=True, exist_ok=True)
